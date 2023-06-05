@@ -9,14 +9,14 @@ public class CreditAccountTest {
     @Test
     public void shouldAddToPositiveBalance() {
         CreditAccount account = new CreditAccount(
-                0,
-                5000,
+                1_000,
+                5_000,
                 15
         );
 
-        account.add(3000);
+        account.add(4_000);
 
-        Assertions.assertEquals(3000, account.getBalance());
+        Assertions.assertEquals(5_000, account.getBalance());
     }
 
     @Test
